@@ -19,7 +19,7 @@ async def progress_for_pyrogram(
 ):
     now = time.time()
     diff = now - start
-    if round(diff % 10.00) == 0 or current == total:
+    if round(diff % 2.50) == 0 or current == total:
         # if round(current / total * 100, 0) % 5 == 0:
         percentage = current * 100 / total
         speed = current / diff
@@ -31,8 +31,8 @@ async def progress_for_pyrogram(
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "[{0}{1}] \n**Process**: {2}%\n".format(
-            ''.join(["█" for i in range(math.floor(percentage / 5))]),
-            ''.join(["░" for i in range(20 - math.floor(percentage / 5))]),
+            ''.join(["🟩" for i in range(math.floor(percentage / 5))]),
+            ''.join(["⬛" for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2))
 
         tmp = progress + "{0} of {1}\n**Speed:** {2}/s\n**ETA:** {3}\n".format(
