@@ -3,13 +3,13 @@
 import os
 
 class Config(object):
-    APP_ID = int(os.environ.get("APP_ID", 1234567))
-    API_HASH = os.environ.get("API_HASH", "")
+    APP_ID = "7434892" 
+    API_HASH = "b645623710413894a1c0e084450876e2"
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1990460616").split())
     DOWNLOAD_LOCATION = "./NexaBots"
-    IS_PUBLIC_BOT = os.environ.get("IS_PUBLIC_BOT", "False")
-    LOGS_CHANNEL = int(os.environ.get("LOGS_CHANNEL", -1234567))
+    IS_PUBLIC_BOT = os.environ.get("IS_PUBLIC_BOT", "True")
+    LOGS_CHANNEL = int(os.environ.get("LOGS_CHANNEL", -1234567, "-1001597887921"))
     TG_MAX_SIZE = 2040108421
     # Mega User Account
     MEGA_EMAIL = os.environ.get("MEGA_EMAIL", "")
