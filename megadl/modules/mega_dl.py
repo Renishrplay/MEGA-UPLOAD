@@ -34,16 +34,9 @@ MEGA_REGEX = (r"^((?:https?:)?\/\/)"
 
 # Github Repo (Don't remove this)
 GITHUB_REPO=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Source Code 🌟", url="https://github.com/Rplayoriginal/MEGA-UPLOAD"
-                    )
+                [[InlineKeyboardButton("Source Code 🌟", url="https://github.com/Rplayoriginal/MEGA-UPLOAD")
                 ],
-                [
-                    InlineKeyboardButton(
-                        "MOVIE CHANNEL 🍿", url="https://t.me/rplaymovie"
-                    )
+                [InlineKeyboardButton("MOVIE CHANNEL 🍿", url="https://t.me/rplaymovie")
                 ]
             ]
         )
